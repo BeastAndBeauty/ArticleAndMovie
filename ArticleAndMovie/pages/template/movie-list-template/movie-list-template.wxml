@@ -1,0 +1,25 @@
+<!--新闻列表模板-->
+<import src='../movie-template/movie-template.wxml' />
+
+<template name='movie-list-template'>
+  <view class='movie-list-container'>
+    <view class='inner-container'>
+
+      <view class='movie-head'>
+        <text class='movie-category'>{{categoryName}}</text>
+        <view class='more' catchtap='moreTapToMovieMore' data-categoryname='{{categoryName}}'>
+          <text class='more-text'>更多</text>
+          <image class='more-image' src='../images/right-arrow.png'></image>
+        </view>
+      </view>
+      
+      <view class='movies-container'>
+        <block wx:for='{{movies}}' wx:key='key'>
+          <template is='movie-template' data='{{...item}}' />
+        </block>
+      </view>
+    </view>
+
+  </view>
+
+</template>

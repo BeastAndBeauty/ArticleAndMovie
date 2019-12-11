@@ -1,0 +1,152 @@
+/* pages/movie-detail/movie-detail.wxss */
+@import '../template/star-template/star-template.wxss';
+
+.movie-detail-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.head-image {
+  width: 100%;
+  height: 300rpx;
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+}
+
+.head-img-hover {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 50rpx;
+  left: 30rpx;
+}
+
+.main-title {
+  color: #fff;
+  font-size: 40rpx;
+}
+
+.sub-title {
+  color: #fff;
+  font-size: 25rpx;
+  margin-top: 20rpx;
+}
+
+.like {
+  display: flex;
+  flex-direction: row;
+}
+
+.hightlight-font {
+  color: #d81e06;
+  font-size: 25rpx;
+}
+
+.plain-font {
+  color: #fff;
+  font-size: 25rpx;
+  margin-right: 20rpx;
+}
+
+.movie-img {
+  width: 150rpx;
+  height: 250rpx;
+  position: absolute;
+  right: 30rpx;
+  top: 150rpx;
+}
+
+.summary {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20rpx;
+}
+
+.original-title {
+  color: #000;
+  padding-top: 30rpx;
+  font-size: 35rpx;
+  margin-bottom: 20rpx;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  color: #999;
+  font-size: 30rpx;
+  margin-bottom: 10rpx;
+}
+
+.mark {
+  margin-right: 20rpx;
+}
+
+.hr {
+  width: 100%;
+  height: 4rpx;
+  background: #ccc;
+  margin-top: 30rpx;
+  margin-bottom: 20rpx;
+}
+
+.synopsis {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+}
+
+.synopsis-font {
+  color: #999;
+  font-size: 25rpx;
+}
+
+.summary-content {
+  font-size: 25rpx;
+  color: #000;
+  letter-spacing: 2rpx;
+  line-height: 30rpx;
+  margin-top: 20rpx;
+}
+
+/*演员*/
+
+.cast {
+  display: flex;
+  flex-direction: column;
+}
+
+.cast-font {
+  color: #999;
+  font-size: 25rpx;
+  padding-left: 20rpx;
+}
+
+.cast-images {
+  width: 100%;
+  white-space: nowrap;
+}
+
+.cast-container {
+  margin-left: 20rpx;
+  margin-top: 20rpx;
+  display: inline-block;
+}
+
+.cast-inner-container {
+  display: flex;
+  flex-direction: column;
+  align-content: middle;
+}
+
+.cast-img {
+  width: 150rpx;
+  height: 200rpx;
+}
+
+.cast-name {
+  font-size: 30rpx;
+}

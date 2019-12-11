@@ -1,0 +1,23 @@
+<!--pages/news-detail/news-detail.wxml-->
+<view class='news-detail-container'>
+
+  <image class='head-image' src='{{articleImage}}'></image>
+
+  <view class='author'>
+    <image class='author-icon' src='{{authorIcon}}'></image>
+    <text class='author-avatar'>{{authorAvatar}}</text>
+    <text class='publish-text'>发表于</text>
+    <text class='author-date'>{{authorDate}}</text>
+  </view>
+
+  <text class='article-title'>{{articleTitle}}</text>
+  <view class='collection-and-comment'>
+    <image class='collection' wx:if='{{collected}}' catchtap='collectionTap' src='../images/collection_selected.png'></image>
+    <image class='collection' wx:else catchtap='collectionTap' src='../images/collect.png'></image>
+    <image class='comment' src='../images/comment.png'></image>
+  </view>
+
+  <text class='article-detail'>{{articleContect}}</text>
+
+
+</view>

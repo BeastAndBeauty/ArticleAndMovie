@@ -1,0 +1,11 @@
+<!--电影模板-->
+<import src='../star-template/star-template.wxml' />
+
+<template name='movie-template'>
+  <view class='movie-container' bindtap='tapToMovieDetail' data-movieid='{{movieId}}'>
+    <image class='movie-image' src='{{largeImage}}'></image>
+    <text class='movie-title'>{{title}}</text>
+    <template is='star-template' data='{{average:average,starArr:starArr}}'/>
+  </view>
+
+</template>

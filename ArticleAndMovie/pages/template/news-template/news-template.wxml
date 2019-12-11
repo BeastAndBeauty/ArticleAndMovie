@@ -1,0 +1,32 @@
+<!--新闻列表模板-->
+<template name="newsTemplate">
+
+  <view class='article-list'>
+
+    <view class='author'>
+      <image class='author-icon' src='{{authorIcon}}' />
+      <text class='author-avatar'>{{authorAvatar}}</text>
+      <text class='author-date'>{{authorDate}}</text>
+    </view>
+
+
+    <view class='article-title'>
+      <text>{{articleTitle}}</text>
+    </view>
+
+    <image class='article-image' src='{{articleImage}}'></image>
+
+    <view class='article-contect'>
+      <text>{{articleContect}}</text>
+    </view>
+
+    <view>
+      <image class='article-collectation-icon' src='../images/collect.png' />
+      <text class='article-collection-amount'>{{articleCollectionAmount}}</text>
+      <image class='article-comment-icon' src='../images/comment.png' />
+      <text class='artcle-comment-amount'>{{artcleCommentAmount}}</text>
+    </view>
+
+  </view>
+
+</template>

@@ -1,0 +1,10 @@
+@import '../template/news-template/news-template.wxss';
+
+.news-container{
+  background: #f1f1f1;
+}
+
+.swiperImage{
+  width: 100%;
+}
+

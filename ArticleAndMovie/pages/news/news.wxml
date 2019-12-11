@@ -1,0 +1,24 @@
+<import src='../template/news-template/news-template.wxml' />
+<view class='news-container'>
+
+  <!--轮播图-->
+  <view>
+    <swiper indicator-dots='{{indicatorDots}}' autoplay='{{autoplay}}' interval='{{interval}}' duration='{{duration}}'>
+      <block wx:for='{{swiperImageUrls}}' wx:key='key'>
+        <swiper-item>
+          <image src='{{item}}' class='swiperImage' />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+
+  <!--文章-->
+  <block  wx:for='{{userData}}' wx:key='key'>
+    <view bindtap='goToNewsDetail' data-newsid='{{item.newsId}}'>
+      <template is='newsTemplate' data='{{...item}}' />
+    </view>
+  </block>
+
+
+
+</view>

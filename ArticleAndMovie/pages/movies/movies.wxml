@@ -1,0 +1,18 @@
+<!--pages/movies/movies.wxml-->
+<import src='../template/movie-list-template/movie-list-template.wxml' />
+
+<view class='search'>
+  <icon type='search' size='13' class='search-img'></icon>
+  <input type='text' placeholder='美女与禽兽' placeholder-class='placeholder' bindblur='onBindBlur' bindfocus='onBindFoucs'></input>
+  <image class='xx-img' bindtap='onCancelTap' src='../images/search-cancel.png'></image>
+</view>
+
+<view class='movie-detail'>
+<template is='movie-list-template' data='{{...inThreaters}}' />
+<template is='movie-list-template' data='{{...comingSoon}}' />
+<template is='movie-list-template' data='{{...top250}}' />
+</view>
+
+<!-- <view class='search-panel' wx:if='{{searchPanelShow}}'>
+<template is='movie-grid-template'  data='{{...searchData}}'/>
+</view> -->

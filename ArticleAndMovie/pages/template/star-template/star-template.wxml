@@ -1,0 +1,15 @@
+<!--电影评价星星模板-->
+
+<template name='star-template'>
+  <view class='stars-container'>
+    <view class='stars'>
+      <block wx:for='{{starArr}}' wx:key='key'>
+        <image src="{{item ? '../images/movie-star.png':'../images/movie-star-normal.png'}}"></image>
+      </block>
+    </view>
+    <text class='text-score'>{{average}}</text>
+  </view>
+
+
+
+</template>

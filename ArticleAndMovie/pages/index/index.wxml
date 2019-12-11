@@ -1,0 +1,37 @@
+<!--index.wxml-->
+<!-- <view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+</view> -->
+
+<view class='index-container'>
+  <image class='uer-avatar' src='{{userInfo.avatarUrl}}'></image>
+  <text class='user-name'>
+<text style='color:red'>Hello</text> {{userInfo.nickName}}
+  </text>
+  <view class='start-container' bindtap='tapToNews'>
+    <text class='start'>开启小程序之旅</text>
+  </view>
+</view>
+
+<!-- <view class="a-scroll">
+  <scroll-view scroll-x class="my-scroll">
+    <view id="img1" class="s-item">
+      <image src="../images/1.jpg"></image>
+    </view>
+    <view id="img2" class="s-item">
+      <image src="../images/2.jpg"></image>
+    </view>
+    <view id="img3" class="s-item">
+      <image src="../images/3.jpg"></image>
+    </view>
+  </scroll-view>
+</view> -->
